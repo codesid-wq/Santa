@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  background: linear-gradient(#0b1a3c, #0d2143);
+  font-family: Arial, sans-serif;
+  color: white;
+  overflow-x: hidden;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+#tracker-wrapper {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+}
+
+#map, #snow, #daynight, #flight-trail {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#santa {
+  position: absolute;
+  width: 90px;
+  transform: translate(-50%, -50%);
+  transition: left 2s ease-in-out, top 2s ease-in-out;
+}
+
+#info {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px;
+  background: rgba(255,255,255,0.1);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#games {
+  margin: 20px;
+}
+
+#games button {
+  margin: 5px;
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: #ff3566;
+  color: white;
+  font-weight: bold;
+}
+
+#game-container {
+  margin-top: 20px;
+  width: 100%;
+  height: 420px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
