@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ultimate Santa Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Santa Tracker Deluxe</h1>
+    <div id="countdown"></div>
+  </header>
+
+  <main>
+    <div id="tracker-wrapper">
+      <canvas id="map"></canvas>
+      <img id="santa" src="assets/santa.png" />
+
+      <canvas id="snow"></canvas>
+      <canvas id="daynight"></canvas>
+      <canvas id="flight-trail"></canvas>
+    </div>
+
+    <section id="info">
+      <div>
+        <h2>Current Location:</h2>
+        <p id="loc"></p>
+      </div>
+
+      <div>
+        <h2>Next Stop:</h2>
+        <p id="next"></p>
+      </div>
+
+      <div>
+        <h2>Presents Delivered:</h2>
+        <p id="presents">0</p>
+      </div>
+    </section>
+
+    <section id="games">
+      <h2>Games</h2>
+      <button onclick="Games.catchPresent.start()">🎁 Catch the Present</button>
+      <button onclick="Games.memoryMatch.start()">🧠 Elf Memory Match</button>
+      <button onclick="Games.reindeerRace.start()">🦌 Reindeer Race</button>
+
+      <div id="game-container"></div>
+    </section>
+  </main>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
